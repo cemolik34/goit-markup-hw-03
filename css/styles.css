@@ -54,7 +54,7 @@ h2 {
 
 h3 {
     font-family: Roboto, sans-serif;
-    font-weight: medium;
+    font-weight: 500;
     font-size: 20px;
     letter-spacing: 2%;
 }
@@ -67,7 +67,7 @@ h3 {
     font-size: 18px;
     line-height: 1.17px;
     letter-spacing: 3%;
-    margin-left: 156px;
+    margin-left: 80px;
 }
 
 .studiotext 
@@ -79,7 +79,17 @@ h3 {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 3%;
+    padding-right: 76px;
 }
+
+.leftheader {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+
 
 .header {
     display: flex;
@@ -94,7 +104,7 @@ h3 {
 .header ul {
     
     list-style-type: none;
-    font-weight: medium;
+    font-weight: 400;
     gap: 40px;
     line-height: 1.5;
     font-size: 16px;
@@ -107,7 +117,7 @@ h3 {
 nav a {
     text-decoration: none;
     color: #2E2F42;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 16px;
     
 
@@ -163,7 +173,7 @@ nav a {
     background-color: var(--white);
     padding: 120px 24px;
     gap: 24px;
-    margin: 0;
+    margin: 80px;
 }   
 
 .team-section {
@@ -179,6 +189,7 @@ nav a {
     gap: 24px;
     align-items: center;
     text-align: center;
+    margin-left: 40px;
 }
 
 .section-portfolio {
@@ -193,7 +204,9 @@ nav a {
     gap: 24px;
     align-items: center;
     text-align: center;
+    margin-left: 40px;
 }
+
 
 .footer {
     background-color: var(--navy-blue);
