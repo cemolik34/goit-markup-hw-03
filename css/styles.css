@@ -82,6 +82,16 @@ h3 {
     padding-right: 76px;
 }
 
+.studiotext:hover {
+    color: var(--ocean);
+    text-decoration: none;
+}
+
+.studiotext:active {
+    color: var(--ocean);
+    text-decoration: none;
+}
+
 .leftheader {
     display: flex;
     align-items: center;
@@ -134,6 +144,10 @@ nav a {
     
 }
 
+nav a:hover, .address a:hover {
+    color: var(--ocean);
+    
+}
 
 .hero {
     background-color: #2E2F42;
