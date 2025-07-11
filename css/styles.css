@@ -2,6 +2,7 @@
 ::after, 
 ::before {
 box-sizing: border-box;
+margin: 0;
 }
 
 
@@ -29,6 +30,14 @@ body {
     letter-spacing: 2%;
     margin: 0 auto;  
 
+}
+
+.header, .section-values, .team-section, .section-portfolio, .footer {
+    max-width: 1158px;
+    margin: 0 auto;
+
+
+    
 }
 
 h1 {
@@ -59,6 +68,7 @@ h3 {
     letter-spacing: 2%;
 }
 
+
 .webtext {
     text-decoration-line: none;
     font-family: Raleway, sans-serif;
@@ -67,7 +77,6 @@ h3 {
     font-size: 18px;
     line-height: 1.17px;
     letter-spacing: 3%;
-    margin-left: 80px;
 }
 
 .studiotext 
@@ -79,7 +88,7 @@ h3 {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 3%;
-    padding-right: 76px;
+    margin-right: 76px;
 }
 
 .studiotext:hover {
@@ -92,25 +101,23 @@ h3 {
     text-decoration: none;
 }
 
-.leftheader {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    
-}
-
 
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  40px;
     background-color: white;
     height: 72px;
-    
-    
 }
+
+.leftheader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;   
+}
+
 .header ul {
     
     list-style-type: none;
@@ -133,12 +140,20 @@ nav a {
 
 } 
 
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 40px;
+    margin-right: 0px;
+}
+
 .address a {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #2E2F42;
-    padding-left: 156px;
     text-decoration-line: none;
     font-style: normal;
     
@@ -156,6 +171,7 @@ nav a:hover, .address a:hover {
     align-items: center;
     justify-content: center;
     height: 600px;
+    gap: 48px; 
 }
 
 
@@ -182,33 +198,52 @@ nav a:hover, .address a:hover {
 .values {
     list-style-type: none;
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--white);
-    padding: 120px 24px;
+    padding: 120px 0;
     gap: 24px;
-    margin: 80px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }   
 
 .team-section {
     background-color: var(--cloud);
-    padding: 120px 24px 72px;
-    
+    display: flex;
+    flex-direction: column;   
+    padding-top: 120px;
 }
 
 .team {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: start;
+    padding: 72px 0;
+    object-fit: cover;
     gap: 24px;
+}
+
+.team li {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-left: 40px;
+    width: 264px;
+    height: 380px;
+    text-align: center; 
+    background-color: var(--white);
+
+
 }
 
 .section-portfolio {
     background-color: var(--white);
-    padding: 120px 24px 72px;
+    border: 1px solid red;
+    object-fit: cover;
 }
 
 .ourportfolio {
@@ -219,6 +254,9 @@ nav a:hover, .address a:hover {
     align-items: center;
     text-align: center;
     margin-left: 40px;
+
+
+    border: 1px solid red;
 }
 
 
